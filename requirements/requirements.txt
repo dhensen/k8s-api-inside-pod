@@ -7,11 +7,11 @@
 certifi==2017.4.17        # via kubernetes
 click==6.7                # via flask
 flask-json==0.3.0
-flask==0.12.2
+flask==1.0
 httplib2==0.10.3          # via oauth2client
 ipaddress==1.0.18         # via kubernetes
 itsdangerous==0.24        # via flask
-jinja2==2.9.6             # via flask
+jinja2==2.10.3            # via flask
 kubernetes==2.0.0
 markupsafe==1.0           # via jinja2
 oauth2client==4.1.0       # via kubernetes
@@ -26,4 +26,4 @@ websocket-client==0.40.0  # via kubernetes
 werkzeug==0.15.3          # via flask
 
 # The following packages are considered to be unsafe in a requirements file:
-# setuptools==41.4.0        # via kubernetes
+# setuptools
