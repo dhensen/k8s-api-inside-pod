@@ -4,26 +4,59 @@
 #
 #    pip-compile --output-file requirements/requirements.txt requirements/requirements.in
 #
-certifi==2017.4.17        # via kubernetes
-click==6.7                # via flask
+backports.ssl-match-hostname==3.7.0.1
+    # via websocket-client
+certifi==2017.4.17
+    # via kubernetes
+click==6.7
+    # via flask
 flask-json==0.3.0
+    # via -r requirements.in
 flask==0.12.2
-httplib2==0.10.3          # via oauth2client
-ipaddress==1.0.18         # via kubernetes
-itsdangerous==0.24        # via flask
-jinja2==2.9.6             # via flask
+    # via
+    #   -r requirements.in
+    #   flask-json
+httplib2==0.19.0
+    # via oauth2client
+ipaddress==1.0.18
+    # via kubernetes
+itsdangerous==0.24
+    # via flask
+jinja2==2.9.6
+    # via flask
 kubernetes==2.0.0
-markupsafe==1.0           # via jinja2
-oauth2client==4.1.0       # via kubernetes
-pyasn1-modules==0.0.8     # via oauth2client
-pyasn1==0.2.3             # via oauth2client, pyasn1-modules, rsa
-python-dateutil==2.6.0    # via kubernetes
-pyyaml==3.12              # via kubernetes
-rsa==3.4.2                # via oauth2client
-six==1.10.0               # via kubernetes, oauth2client, python-dateutil, websocket-client
-urllib3==1.21.1           # via kubernetes
-websocket-client==0.40.0  # via kubernetes
-werkzeug==0.15.3          # via flask
+    # via -r requirements.in
+markupsafe==1.0
+    # via jinja2
+oauth2client==4.1.0
+    # via kubernetes
+pyasn1-modules==0.0.8
+    # via oauth2client
+pyasn1==0.2.3
+    # via
+    #   oauth2client
+    #   pyasn1-modules
+    #   rsa
+pyparsing==2.4.7
+    # via httplib2
+python-dateutil==2.6.0
+    # via kubernetes
+pyyaml==3.12
+    # via kubernetes
+rsa==3.4.2
+    # via oauth2client
+six==1.10.0
+    # via
+    #   kubernetes
+    #   oauth2client
+    #   python-dateutil
+    #   websocket-client
+urllib3==1.21.1
+    # via kubernetes
+websocket-client==0.40.0
+    # via kubernetes
+werkzeug==0.15.3
+    # via flask
 
 # The following packages are considered to be unsafe in a requirements file:
-# setuptools==41.4.0        # via kubernetes
+# setuptools
